@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+  *{
+    font-family: "Poppins", sans-serif;
+  }
+html {
+     scroll-behavior: smooth;
+   }
+   body{
+     height: 100vh;
+     overflow-x: hidden;
+     background-color: #f5ebe0;
+   }
+   .f{
+    color: #c88a4c;
+   }
+
+   .sideBar {
+    position: fixed;
+    top: 0;
+    left: 0; 
+    height: 100vh;
+    width: 250px; 
+    padding: 50px 20px;
+    background: #f5ebe0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(8px);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    z-index: 9999;
+  }
+  
+  .fade-out {
+    transform: translateX(-100%); 
+    opacity: 0;
+  }
+
+  .cart {
+    position: fixed;
+    top: 0;
+    right: 0; 
+    height: 100vh;
+    width: 350px; 
+    padding: 50px 20px;
+    background: #f5ebe0;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(8px);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    z-index: 9999;
+  }
+  
+  .clear{
+    border: 1px solid #c88a4c;
+    color: black;
+  }
+  button{
+    cursor: pointer;
+  }
+
+  
+  
+
+
+.link:hover{
+     color: hsl(30, 53%, 54%);
+}
+/* .products{
+  background-color: white;
+} */
+
+
+@media(max-width:500px) {
+  #home{
+    width: 100%;
+    margin: auto;
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+  #home img{
+    width: 300px;
+  }
+  
+
+  
+}
