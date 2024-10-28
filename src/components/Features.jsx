@@ -1,46 +1,52 @@
 import React from "react";
 import ProductCard from "./ProductCard";
+import image7 from "../assets/img/product7.jpg";
+import image8 from "../assets/img/product8.jpg";
+import image9 from "../assets/img/product9.jpg";
+import image10 from "../assets/img/product10.jpg";
+import image11 from "../assets/img/product11.jpg";
+import image12 from "../assets/img/product12.jpg";
 
 const Features = () => {
   const data = [
     {
       id: 6,
-      img: "/src/assets/img/product7.jpg",
+      img: image7,
       name: "FrostFire Outerlayers",
       price: "398.00",
       discount: "24% Off",
     },
     {
       id: 7,
-      img: "/src/assets/img/product8.jpg",
+      img: image8,
       name: "DaintyDoll Dresses",
       price: "258.00",
       discount: "40% Off",
     },
     {
       id: 8,
-      img: "/src/assets/img/product9.jpg",
+      img: image9,
       name: "TrendTraverse Bag",
       price: "104.00",
       discount: "35% Off",
     },
     {
       id: 9,
-      img: "/src/assets/img/product10.jpg",
+      img: image10,
       name: "Fitness Footgear",
       price: "299.00",
       discount: "40% Off",
     },
     {
       id: 10,
-      img: "/src/assets/img/product11.jpg",
+      img: image11,
       name: "UrbanBelle Hoodies",
       price: "129.00",
       discount: "28% Off",
     },
     {
       id: 11,
-      img: "/src/assets/img/product12.jpg",
+      img: image12,
       name: "Elite Handbags",
       price: "189.00",
       discount: "30% Off",
@@ -48,16 +54,15 @@ const Features = () => {
   ];
 
   return (
-    <div className=" min-h-screen flex flex-col justify-center pt-24 bg-white pb-10" id="features">
-      <h1 className=" font-semibold text-4xl text-center text-DarkColor">
+    <div className="min-h-screen flex flex-col justify-center pt-24 bg-white pb-10" id="features">
+      <h1 className="font-semibold text-4xl text-center text-DarkColor">
         Exclusive Products
       </h1>
 
-      <div className=" flex flex-wrap justify-center gap-5 pt-8">
+      <div className="flex flex-wrap justify-center gap-5 pt-8">
         {data.map((item) => (
-          <div className=" md:w-2/4 lg:w-1/4" key={item.id}>
+          <div className="md:w-2/4 lg:w-1/4" key={item.id}>
             <ProductCard
-              key={item.id}
               product={item}
               id={item.id}
               img={item.img}

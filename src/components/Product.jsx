@@ -1,26 +1,29 @@
 import React from "react";
 import ProductCard from "./ProductCard";
+import image13 from "../assets/img/product13.jpg"
+import image14 from "../assets/img/product14.jpg"
+import image15 from "../assets/img/product15.jpg"
 
 
 const Products = () => {
   const data = [
     {
       id: 12,
-      img: "/src/assets/img/product13.jpg",
+      img: image13,
       name: "Canvas Sneakers",
       price: "298.00",
       discount: "28% Off",
     },
     {
       id: 13,
-      img: "/src/assets/img/product14.jpg",
+      img: image14,
       name: "shirt combo pack ",
       price: "199.00",
       discount: "40% Off",
     },
     {
       id: 14,
-      img: "/src/assets/img/product15.jpg",
+      img: image15,
       name: "Hublot watch",
       price: "198.00",
       discount: "26% Off",
